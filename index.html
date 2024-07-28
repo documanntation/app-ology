@@ -2,21 +2,38 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forgive Me, Please?</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1 id="heading">Forgive: A place to apologize</h1>
-    <div>
-      <input id="forwho" />
-      <textarea id="content"></textarea>
+    <div id="heading">
+      <img
+        src="https://static.vecteezy.com/system/resources/thumbnails/010/866/130/small_2x/apologize-or-say-sorry-regret-for-what-happen-asking-for-forgiveness-professional-or-leadership-after-mistake-or-failure-pardon-or-feel-sad-concept-businessman-bow-down-say-sorry-for-apologize-vector.jpg"
+      />
+      <h1 id="heading-title">App-ology: A Place to Apologize</h1>
+      <h2 id="heading-description">
+        For you who want to express remorses but cannot send your apologies
+        directly to the person, due to death or other reasons.
+      </h2>
+      <h3 id="heading-cta">Send the apology message below!</h3>
+    </div>
+    <div class="apology-box">
+      <input id="forwho" placeholder="For Who?" />
+      <textarea id="content" placeholder="Your apology message"></textarea>
       <button id="sendBtn">Send Apology Message</button>
     </div>
     <div>
-      <input type="text" id="deleteTitle" placeholder="Enter title to delete" />
+      <input id="_id" placeholder="Enter ID to delete" />
       <button id="deleteBtn">Delete</button>
     </div>
-    <script type="module" src="/src/main.ts"></script>
+    <div id="result" class="result"></div>
+    <script type="module" src="./src/main.ts"></script>
   </body>
 </html>
